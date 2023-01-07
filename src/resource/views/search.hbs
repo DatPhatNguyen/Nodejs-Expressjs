@@ -1,0 +1,18 @@
+<div class="search-form mt-5">
+    {{!-- Default behavior: form act on your current URL so 
+    if you want to act another URL you use attr action "your URL" --}}
+<form method="GET" action="/news">
+  <div class="mb-3">
+    <label for="search-input" class="form-label">Your full name ?</label>
+    <input type="text" class="form-control"name = "fullname"></div>
+  <div class="mb-3">
+    <label for="search-input" class="form-label">Your age ?</label>
+    <input type="text" class="form-control"name = "age"></div>
+  <div class="mb-3">
+    <label for="search-input" class="form-label">What do you want to find ?</label>
+    <input type="text" name="q"class="form-control" placeholder="Searching....">
+  </div>
+  <button type="submit" class="btn btn-primary">Search</button>
+</form>
+
+</div>
