@@ -6,6 +6,6 @@ const newsController = require("../app/controllers/NewsConTroller"); // create n
 // newsController.index(); lay phuong thuc index tu Controller news
 
 // newController.index;
-router.use("/:slug", newsController.showDeTail);
-router.use("/", newsController.index);
+router.get("/:slug", newsController.showDeTail);
+router.get("/", newsController.index);
 module.exports = router;
